@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagenes/pattern.webp);
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: #005f70cb;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo{
+    margin-left: 40px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.enlaces a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 45px;
+}
+
+.enlaces a:hover{
+    color: #ccc;
+}
+
+.enlaces ul{
+    display: flex;
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 37px;
+    background-color: #005f70cb;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer p{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #fff;
+    font-size: 12px;
+}
+
+p, h1, h2, h3, aside {
+    background-color: rgba(0, 95, 112, 0.9);
+    box-shadow: 1px 1px 2px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btnSubir {
+    position: fixed; 
+    bottom: 20px; 
+    right: 75px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+#btnSubir:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .logo, .enlaces {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .logo img {
+        margin: 0 auto; 
+    }
+
+    .enlaces ul {
+        flex-direction: column; 
+    }
+
+    .enlaces a {
+        display: block; 
+        margin: 10px 0; 
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .logo{
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h1, h2, h3, p {
+        margin: 5px 0;
+        padding: 0px;
+    }
+
+    #btnSubir{
+        right: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 9px;
+    }
+}

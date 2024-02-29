@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Aprende cómo instalar y configurar servidores web y VPN con tutoriales paso a paso."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutoriales y Más</title>
+    <link rel="icon" type="image/jpeg" href="imagenes/logo.jpeg" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos-index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="imagenes/logo.jpeg" alt="Logo de Tutoriales y Más"
+          /></a>
+        </div>
+        <div class="enlaces">
+          <ul>
+            <li>
+              <a href="paginas/servidor-web.html">
+                Instalación de un Servidor Web
+              </a>
+            </li>
+            <li>
+              <a href="paginas/servidor-VPN.html">
+                Instalacion de un servidor VPN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Sección de información sobre los servidores Web -->
+
+      <section id="sc1">
+        <h1>Instalación de Servidores: Guía Completa</h1>
+        <p id="p1">
+          Descubre cómo instalar y configurar servidores web y VPN con nuestros
+          tutoriales detallados y fáciles de seguir.
+        </p>
+        <img src="imagenes/banner.webp" alt="banner" />
+      </section>
+      <hr />
+
+      <section id="web">
+        <h2>Servidores Web</h2>
+        <img src="imagenes/servidorWeb.webp" alt="servidorWeb" />
+      </section>
+      <hr>
+      <!-- Sección que son los servidores Web -->
+      <section id="queesweb">
+        <h3>¿Qué es un servidor Web?</h3>
+        <p>
+          Un servidor web es un software y el hardware que lo ejecuta, diseñado
+          para aceptar solicitudes HTTP (Hypertext Transfer Protocol) de
+          clientes, conocidos comúnmente como navegadores web, y servirles
+          respuestas HTTP, usualmente en forma de páginas web (documentos HTML),
+          pero también puede entregar archivos, servicios de datos o contenido
+          multimedia. La función principal de un servidor web es almacenar,
+          procesar y entregar contenido web a los usuarios.
+        </p>
+        <p>
+          El proceso típico de interacción entre un navegador y un servidor web
+          funciona de la siguiente manera:
+        </p>
+        <ol>
+          <li>
+            <p>
+              <b>Solicitud del Cliente:</b> Un usuario escribe una URL en su
+              navegador o hace clic en un enlace. El navegador envía una
+              solicitud HTTP al servidor web solicitando el recurso especificado
+              por la URL.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Procesamiento del Servidor:</b> El servidor web recibe la
+              solicitud, la procesa y determina el recurso solicitado. Si el
+              recurso existe y está disponible para el usuario, el servidor
+              prepara una respuesta. Esta respuesta puede implicar la ejecución
+              de scripts para generar contenido dinámico.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Respuesta del Servidor:</b> El servidor web envía una respuesta
+              al navegador. Esta respuesta incluye un código de estado HTTP (por
+              ejemplo, 200 OK para una solicitud exitosa) y, si es pertinente,
+              el contenido solicitado, como una página web, una imagen, un
+              archivo, etc.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Renderizado del Navegador:</b> Una vez que el navegador recibe
+              la respuesta del servidor, interpreta el contenido (por ejemplo,
+              el HTML) y lo muestra al usuario. Si la respuesta incluye
+              referencias a otros recursos (como imágenes, hojas de estilo CSS,
+              o scripts de JavaScript), el navegador puede realizar solicitudes
+              adicionales para obtener esos recursos.
+            </p>
+          </li>
+        </ol>
+        <p>
+          Los servidores web pueden ser configurados para servir sitios web
+          estáticos, que devuelven contenido fijo a todos los usuarios, o sitios
+          web dinámicos, que ejecutan aplicaciones del lado del servidor para
+          generar y servir contenido personalizado a cada usuario. Ejemplos
+          populares de software de servidor web incluyen Apache HTTP Server,
+          Nginx, Microsoft Internet Information Services (IIS) y LiteSpeed.
+        </p>
+      </section>
+      <hr>
+      <!-- Sección sobre los beneficios de aprender a instalar servidores Web -->
+      <section id="beneficiosweb">
+        <h3>¿Qué beneficios obtengo de aprender a instalar un servidor Web?</h3>
+        <p>
+          Aprender a instalar un servidor web específicamente para alojar una
+          página web ofrece varios beneficios importantes, tanto desde una
+          perspectiva técnica como práctica. Aquí te detallo algunos de los
+          beneficios clave:
+        </p>
+        <ol>
+          <li>
+            <p>
+              <b>Control total sobre el entorno de alojamiento:</b> Instalando
+              tu propio servidor web, tienes control completo sobre el entorno
+              de alojamiento. Esto significa que puedes personalizar la
+              configuración del servidor, las versiones de software, y los
+              parámetros de seguridad para satisfacer las necesidades
+              específicas de tu página web, algo que puede ser limitado en
+              entornos de alojamiento compartido.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Optimización de recursos:</b> Puedes optimizar los recursos del
+              servidor (como la memoria, el espacio en disco y el ancho de
+              banda) para mejorar el rendimiento de tu página web. Esto es
+              especialmente útil para sitios web con altos volúmenes de tráfico
+              o aplicaciones web intensivas en recursos
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Habilidades de desarrollo y pruebas:</b> Aprender a instalar un
+              servidor web te permite configurar un entorno de desarrollo y
+              pruebas local que replica el entorno de producción. Esto es
+              crucial para el desarrollo web, ya que permite a los
+              desarrolladores probar sus sitios web y aplicaciones en un entorno
+              seguro antes de lanzarlos al público.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Experiencia práctica con tecnologías web:</b> Te brinda la
+              oportunidad de ganar experiencia práctica con tecnologías web
+              fundamentales, incluyendo HTTP/HTTPS, SSL/TLS para la seguridad,
+              servidores de bases de datos, y lenguajes de programación del lado
+              del servidor. Esta experiencia es invaluable para cualquier
+              persona que busca avanzar en una carrera en desarrollo web o
+              administración de sistemas.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Seguridad y privacidad:</b> Al administrar tu propio servidor,
+              puedes implementar medidas de seguridad personalizadas para
+              proteger tu sitio web contra ataques cibernéticos. Esto incluye la
+              configuración de firewalls, certificados SSL para encriptar datos,
+              y medidas para mitigar ataques comunes como inyecciones SQL y
+              cross-site scripting (XSS).
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Aprendizaje sobre el manejo del tráfico web:</b> Gestionar un
+              servidor web por ti mismo te enseñará cómo manejar diferentes
+              cargas de tráfico, cómo escalar recursos según sea necesario, y
+              cómo asegurar que tu sitio web permanezca accesible y eficiente
+              bajo condiciones de tráfico variadas.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Economía y autosuficiencia:</b> Aunque hay un costo inicial en
+              términos de hardware y posiblemente software, aprender a instalar
+              y administrar tu propio servidor web puede ser más económico a
+              largo plazo, especialmente si planeas alojar múltiples sitios web.
+              Además, te hace menos dependiente de terceros proveedores de
+              alojamiento web.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Desarrollo profesional:</b> Las habilidades adquiridas a través
+              de la instalación y gestión de un servidor web son altamente
+              valoradas en el campo de la tecnología. Esto puede abrirte puertas
+              a nuevas oportunidades laborales en áreas como desarrollo web,
+              administración de sistemas, y seguridad de la información.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <hr>
+      <section id="tiposweb">
+        <h3>Tipos de servidores Web</h3>
+        <p>
+          Los servidores web se pueden clasificar de varias maneras, incluyendo
+          su software, su propósito, o la tecnología que utilizan. Aquí te
+          presento una descripción general de los tipos de servidores web basada
+          en el software de servidor más comúnmente utilizado, ya que esta es
+          una de las formas más prácticas de categorizarlos:
+        </p>
+        <section>
+          <h4>1. Apache HTTP Server</h4>
+          <p>Desarrollador: Apache Software Foundation</p>
+          <p>
+            Características: Es uno de los servidores web más populares y
+            ampliamente utilizados en Internet. Es conocido por su flexibilidad,
+            ya que puede ser configurado para servir una amplia variedad de
+            sitios web. Es compatible con múltiples módulos que extienden sus
+            funcionalidades.
+          </p>
+          <p>
+            Uso: Ideal para todo tipo de proyectos, desde pequeños sitios web
+            hasta grandes aplicaciones empresariales.
+          </p>
+        </section>
+        <section>
+          <h4>2. Nginx</h4>
+          <p>Desarrollador: Igor Sysoev</p>
+          <p>
+            Características: Inicialmente diseñado para manejar altas cargas de
+            tráfico con eficiencia, Nginx es conocido por su alto rendimiento,
+            estabilidad, configuración simple, y bajo consumo de recursos.
+            También se utiliza como un proxy inverso y balanceador de carga.
+          </p>
+          <p>
+            Uso: Muy utilizado para sitios web con mucho tráfico, aplicaciones
+            web modernas, y como solución para mejorar el rendimiento de sitios
+            web existentes.
+          </p>
+        </section>
+        <section>
+          <h4>3. Microsoft Internet Information Services (IIS)</h4>
+          <p>Desarrollador: Microsoft</p>
+          <p>
+            Características: Integrado en las versiones de Windows Server, IIS
+            es una opción robusta para aplicaciones que requieren tecnologías
+            específicas de Microsoft, como ASP.NET. Ofrece una gestión integrada
+            a través de herramientas de administración de Windows.
+          </p>
+          <p>
+            Uso: Ideal para sitios web y aplicaciones que se basan en el stack
+            tecnológico de Microsoft.
+          </p>
+        </section>
+        <section>
+          <h4>4. LiteSpeed Web Server</h4>
+          <p>Desarrollador: LiteSpeed Technologies</p>
+          <p>
+            Características: Es conocido por su capacidad para servir páginas
+            web rápidamente y su eficiencia en el uso de recursos. Ofrece una
+            compatibilidad directa con las configuraciones de Apache, lo que
+            facilita la migración de sitios web existentes.
+          </p>
+          <p>
+            Uso: Adecuado para una amplia gama de sitios web, especialmente
+            aquellos que buscan mejorar el rendimiento sin cambios
+            significativos en la configuración del servidor.
+          </p>
+        </section>
+        <section>
+          <h4>5. Apache Tomcat</h4>
+          <p>Desarrollador: Apache Software Foundation</p>
+          <p>
+            Características: Más que un servidor web completo, Tomcat es un
+            contenedor de servlets que proporciona soporte para tecnologías Java
+            como Java Servlet y JavaServer Pages (JSP). Se puede utilizar en
+            combinación con un servidor web tradicional como Apache HTTP Server.
+          </p>
+          <p>Uso: Recomendado para aplicaciones web basadas en Java.</p>
+        </section>
+        <section>
+          <h4>6. OpenLiteSpeed</h4>
+          <p>Desarrollador: LiteSpeed Technologies</p>
+          <p>
+            Características: La edición de código abierto de LiteSpeed Web
+            Server, ofrece muchas de las mismas características pero con algunas
+            limitaciones en comparación con su versión comercial. Es conocido
+            por su rendimiento y eficiencia.
+          </p>
+          <p>
+            Uso: Una buena opción para sitios web personales y de pequeñas
+            empresas que buscan mejorar el rendimiento.
+          </p>
+        </section>
+        <section>
+          <h4>7. NGINX Unit</h4>
+          <p>Desarrollador: Equipo de Nginx</p>
+          <p>
+            Características: Un servidor web políglota y un entorno de ejecución 
+            para aplicaciones web que soporta Python, PHP, Perl, Ruby, Go, y
+            Node.js. Es dinámicamente configurable sin necesidad de reiniciar el
+            proceso del servidor.
+          </p>
+          <p>Uso: Ideal para aplicaciones web dinámicas y microservicios.</p>
+        </section>
+      </section>
+      <hr>
+      <section id="resumenweb">
+        <h3>Resumen de la instalación</h3>
+        <section>
+          <h4>Introducción</h4>
+          <p>Un servidor web es un software que proporciona datos, como páginas web, a través de Internet. Es fundamental para alojar sitios web y aplicaciones web.</p>
+            </section>
+            <section>
+                <h4>Requisitos previos</h4>
+                <p>Antes de comenzar la instalación, asegúrate de tener un sistema operativo compatible, como Linux, Windows, o MacOS, y acceso a una cuenta con privilegios de administrador o root.</p>
+            </section>
+            <section>
+                <h4>Pasos de instalación</h4>
+                <p>1. Elige un software de servidor web, como Apache, Nginx, o IIS.<br>
+                   2. Descarga e instala el software del servidor web siguiendo las instrucciones específicas para tu sistema operativo.<br>
+                   3. Configura el servidor web ajustando los archivos de configuración según tus necesidades.</p>
+            </section>
+            <section>
+                <h4>Publicación de contenido</h4>
+                <p>Para publicar tu sitio web o aplicación web, coloca los archivos en el directorio designado del servidor web y asegúrate de que estén accesibles a través de Internet.</p>
+            </section>
+            <section>
+                <h4>Pruebas y verificación</h4>
+                <p>Accede a tu servidor web desde un navegador utilizando la dirección IP del servidor o un dominio apuntando a esa IP para verificar que el servidor está funcionando correctamente.</p>
+            </section>
+            <section>
+                <h4>Solución de problemas</h4>
+                <p>Si encuentras problemas, revisa los logs del servidor web y consulta la documentación oficial para soluciones específicas.</p>
+          </section>
+      </section>
+      <hr>
+
+      <!-- Sección de información sobre los servidores VPN -->
+      <section id="vpn">
+        <h2>Servidores VPN</h2>
+        <img src="imagenes/servidorVPN.webp" alt="servidorVPN" />
+      </section>
+      <hr>
+      <section id="queesvpn">
+        <h3>¿Qué es un servidor VPN?</h3>
+        <p>
+          Un servidor VPN (Virtual Private Network o Red Privada Virtual) es un
+          tipo de tecnología de red que permite crear una conexión segura y
+          cifrada sobre una red menos segura, como Internet. La función
+          principal de un servidor VPN es permitir al usuario enviar y recibir
+          datos a través de redes compartidas o públicas como si sus
+          dispositivos de computación estuvieran directamente conectados a una
+          red privada. Esto ofrece varias ventajas, tales como:
+        </p>
+        <section>
+          <h4>Seguridad:</h4>
+          <p>
+            Al cifrar el tráfico de Internet, un servidor VPN protege tus datos
+            de posibles interceptaciones o espionaje, haciendo que sea mucho más
+            difícil para los hackers o agencias gubernamentales rastrear tus
+            actividades en línea o robar información personal.
+          </p>
+        </section>
+        <section>
+          <h4>Privacidad:</h4>
+          <p>
+            Usar un servidor VPN puede ayudar a ocultar tu dirección IP real, lo
+            que dificulta que los sitios web, los anunciantes y otras partes
+            rastreen tu ubicación geográfica o identifiquen tu dispositivo en
+            Internet.
+          </p>
+        </section>
+        <section>
+          <h4>Acceso a contenido restringido geográficamente:</h4>
+          <p>
+            Al conectarte a un servidor VPN en una ubicación específica, puedes
+            acceder a contenido o servicios en línea que de otro modo estarían
+            restringidos en tu región, como servicios de streaming, sitios web
+            bloqueados por censura, etc.
+          </p>
+        </section>
+        <section>
+          <h4>Evitar la limitación de ISP:</h4>
+          <p>
+            Algunos proveedores de servicios de Internet (ISP) pueden limitar
+            ciertos tipos de tráfico, como el streaming o las descargas P2P. Una
+            VPN puede ayudar a evitar estas restricciones al enmascarar el tipo
+            de tráfico que generas.
+          </p>
+        </section>
+        <p>
+          Los servidores VPN pueden ser ofrecidos por proveedores de servicios
+          VPN comerciales, que suelen cobrar una tarifa por sus servicios, o
+          pueden ser configurados en servidores privados para uso personal o
+          corporativo. La configuración y el mantenimiento de un servidor VPN
+          requieren un cierto nivel de conocimiento técnico, pero hay muchas
+          soluciones disponibles que simplifican este proceso para los usuarios
+          y las empresas.
+        </p>
+      </section>
+      <hr>
+      <section id="beneficiosvpn">
+        <h3>¿Qué beneficios obtengo de aprender a instalar un servidor VPN?</h3>
+        <p>
+          Aprender a instalar un servidor VPN ofrece varios beneficios tanto a
+          nivel personal como profesional, dado el papel crucial que juega la
+          VPN en la mejora de la seguridad y la privacidad en línea, así como en
+          la facilitación del acceso a recursos restringidos. Aquí detallo
+          algunos de los beneficios más significativos:
+        </p>
+
+        <section>
+          <h4>Mejora de la seguridad y privacidad en línea:</h4>
+          <p>
+            Al instalar tu propio servidor VPN, puedes asegurar tus conexiones de
+            Internet, protegiendo tus datos personales de hackers, espías y
+            agencias de vigilancia. Esto es especialmente útil cuando utilizas
+            redes Wi-Fi públicas, que son notoriamente inseguras.
+          </p>
+        </section>
+        <section>
+          <h4>Control total sobre tu red:</h4>
+          <p>
+            Administrar tu propio servidor VPN te da control total sobre las
+            políticas de acceso y seguridad, permitiéndote decidir quién puede
+            acceder a tu red y bajo qué condiciones. Esto es beneficioso tanto
+            para usuarios individuales que buscan seguridad adicional como para
+            empresas que necesitan proteger datos sensibles.
+          </p>
+        </section>
+        <section>
+          <h4>Acceso remoto a recursos locales:</h4>
+          <p>
+            Un servidor VPN facilita el acceso seguro a tu red doméstica o de la
+            empresa desde cualquier lugar del mundo. Esto es particularmente útil
+            para profesionales que necesitan acceder a archivos de trabajo o
+            aplicaciones de la empresa de manera remota.
+          </p>
+        </section>
+        <section>
+          <h4>Evitar la censura y acceder a contenido bloqueado:</h4>
+          <p>
+            Al operar tu propio servidor VPN, puedes eludir la censura y
+            restricciones geográficas, accediendo a contenido y servicios en línea
+            que de otra manera estarían inaccesibles desde tu ubicación actual.
+          </p>
+        </section>
+        <section>
+          <h4>Desarrollo de habilidades técnicas:</h4>
+          <p>
+            Aprender a instalar y administrar un servidor VPN mejora tus
+            habilidades técnicas y conocimientos en redes, seguridad informática y
+            administración de sistemas. Estas habilidades son altamente valoradas
+            en el ámbito profesional de TI.
+          </p>
+        </section>
+        <section>
+          <h4>Ahorro de costos para negocios:</h4>
+          <p>
+            Las empresas pueden reducir sus costos operativos al implementar sus
+            propias soluciones VPN en lugar de depender de servicios VPN
+            comerciales, especialmente si requieren conexiones seguras para un
+            gran número de empleados.
+          </p>
+        </section>
+        <section>
+          <h4>Personalización y flexibilidad:</h4>
+          <p>
+            Al configurar tu propio servidor VPN, puedes personalizar la
+            configuración para satisfacer tus necesidades específicas de
+            seguridad, rendimiento y acceso, algo que puede no ser posible con
+            soluciones VPN comerciales prediseñadas.
+          </p>
+        </section>
+        <section>
+          <h4>Aprendizaje continuo:</h4>
+          <p>
+            El campo de la seguridad cibernética está en constante evolución, y el
+            mantenimiento de un servidor VPN te obliga a mantenerte actualizado
+            sobre las últimas amenazas y tecnologías de protección, enriqueciendo
+            tu educación continua en este ámbito.
+          </p>
+        </section>
+      </section>
+      <hr>
+      <section id="tiposvpn">
+        <h3>Tipos de servidores VPN</h3>
+        <p>
+          Los servidores VPN se pueden clasificar en varios tipos, basados en el protocolo de seguridad que utilizan, la manera en que se configuran o el propósito específico para el que están diseñados. Aquí hay una descripción general de los tipos más comunes de servidores VPN:
+        </p>
+        <section>
+          <h4>1. PPTP (Point-to-Point Tunneling Protocol)</h4>
+          <p>
+            <b>Ventajas:</b> Fácil de configurar, ampliamente soportado.
+          </p>
+          <p>
+            <b>Desventajas:</b> Considerado inseguro debido a vulnerabilidades en el protocolo.
+          </p>
+        </section>
+        <section>
+          <h4>2. L2TP/IPsec (Layer 2 Tunneling Protocol over IP Security)</h4>
+          <p>
+            <b>Ventajas:</b> Ofrece más seguridad que PPTP, ampliamente soportado.
+          </p>
+          <p>
+            <b>Desventajas:</b> Puede ser bloqueado por algunos firewalls, la configuración puede ser compleja.
+          </p>
+        </section>
+        <section>
+          <h4>3. SSTP (Secure Socket Tunneling Protocol)</h4>
+          <p>
+            <b>Ventajas:</b> Ofrece una buena seguridad, puede atravesar firewalls.
+          </p>
+          <p>
+            <b>Desventajas:</b> Principalmente soportado solo en Windows.
+          </p>
+        </section>
+        <section>
+          <h4>4. IKEv2/IPsec (Internet Key Exchange version 2 over IP Security)</h4>
+          <p>
+            <b>Ventajas:</b> Muy seguro, reanuda rápidamente la conexión VPN después de la desconexión.
+          </p>
+          <p>
+            <b>Desventajas:</b> No es tan ampliamente soportado como L2TP/IPsec.
+          </p>
+        </section>
+        <section>
+          <h4>5. OpenVPN</h4>
+          <p>
+            <b>Ventajas:</b> Open source, altamente seguro, configurable, puede atravesar firewalls.
+          </p>
+          <p>
+            <b>Desventajas:</b> La configuración puede ser compleja para principiantes.
+          </p>
+        </section>
+        <section>
+          <h4>6. WireGuard®</h4>
+          <p>
+            <b>Ventajas:</b> Moderno, rápido, más eficiente y fácil de configurar que OpenVPN.
+          </p>
+          <p>
+            <b>Desventajas:</b> Aunque está ganando soporte, no es tan ampliamente adoptado como OpenVPN.
+            
+          </p>
+        </section>
+        <section>
+          <h4>7. SoftEther VPN</h4>
+          <p>
+            <b>Ventajas:</b> Multi-protocolo, open source, muy flexible y seguro.
+          </p>
+          <p>
+            <b>Desventajas:</b> Menos conocido, puede ser complejo de configurar.
+          </p>
+        </section>
+        <p>
+          Cada uno de estos tipos de servidores VPN tiene sus propias particularidades, ventajas y desventajas, dependiendo de las necesidades específicas de seguridad, velocidad, compatibilidad y facilidad de uso. Por ejemplo, mientras que PPTP puede ser suficiente para aplicaciones que no requieren una seguridad robusta, protocolos como OpenVPN o WireGuard son preferidos por aquellos que necesitan altos niveles de seguridad y privacidad. La elección del servidor VPN adecuado dependerá de las necesidades específicas del usuario o de la organización, así como de la infraestructura de red existente.
+        </p>
+      </section>
+      <hr>
+      <section id="resumenvpn">
+        <h3>Resumen de la instalación</h3>
+        <section>
+          <h4>Introducción</h4>
+          <p>
+            Un servidor VPN permite a los usuarios conectarse de manera segura a
+            una red privada a través de Internet. Es útil para garantizar la
+            seguridad y privacidad de las comunicaciones online.
+          </p>
+        </section>
+        <section>
+          <h4>Requisitos previos</h4>
+          <p>
+            Antes de comenzar, asegúrate de contar con el hardware necesario y
+            acceso a un sistema operativo compatible, como Linux, Windows Server,
+            etc.
+          </p>
+        </section>
+        <section>
+          <h4>Pasos de instalación</h4>
+          <p>
+            1. Descargar el software VPN.<br>
+            2. Instalar el software siguiendo las instrucciones del proveedor.<br />
+            3. Configurar el servidor con los ajustes deseados.
+          </p>
+        </section>
+        <section>
+          <h4>Configuración de clientes VPN</h4>
+          <p>
+            Para conectarte al servidor VPN desde un dispositivo cliente,
+            necesitarás instalar el software VPN y configurarlo con los datos
+            proporcionados por el servidor.
+          </p>
+        </section>
+        <section>
+          <h4>Pruebas y verificación</h4>
+          <p>
+            Después de configurar el servidor y los clientes, realiza pruebas para
+            asegurar que la conexión es segura y estable.
+          </p>
+        </section>
+        <section>
+          <h4>Solución de problemas</h4>
+          <p>
+            Si encuentras errores, verifica las configuraciones y consulta la
+            documentación de tu proveedor de VPN para soluciones específicas.
+          </p>
+        </section>
+      <hr>
+    </main>
+
+    <aside>
+      <!-- Testimonios, enlaces a recursos, información de contacto, etc. -->
+      <h2>Información</h2>
+      <ul>
+        <li>
+          <a href="#web">Servidores Web</a>
+          <ul>
+            <li><a href="#queesweb">¿Qué es un servidor Web?</a></li>
+            <li><a href="#beneficiosweb">¿Qué beneficios obtengo?</a></li>
+            <li><a href="#tiposweb">Tipos de servidores Web</a></li>
+            <li><a href="#resumenweb">Resumen de la instalación</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#vpn">Servidores VPN</a>
+          <ul>
+            <li><a href="#queesvpn">¿Qué es un servidor VPN?</a></li>
+            <li><a href="#beneficiosvpn">¿Qué beneficios obtengo?</a></li>
+            <li><a href="#tiposvpn">Tipos de servidores VPN</a></li>
+            <li><a href="#resumenvpn">Resumen de la instalación</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+        &copy; 2024 José Hinojosa, miembro 2, miembro 3. Todos los derechos
+        reservados.
+      </p>
+      <p>Última actualización: febrero 27, 2024</p>
+    </footer>
+
+    <button id="btnSubir" onclick="subirArriba()">↑ Subir</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

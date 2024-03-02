@@ -6,6 +6,7 @@
     <title>Servidor Web</title>
     <link rel="icon" type="image/jpeg" href="../imagenes/logo.jpeg" />
     <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos-paginas.css" />
   </head>
   <body>
     <header>
@@ -19,67 +20,193 @@
     </header>
     <main>
       <section>
-        <h1>Guía de Instalación de Apache HTTP Server en Windows</h1>
+        <h1>Guía de Instalación de IIS en Windows Server</h1>
         <p>
-          Bienvenido a nuestra guía paso a paso sobre cómo instalar Apache HTTP
-          Server en un sistema operativo Windows. A lo largo de esta guía, te
-          llevaremos a través de cada paso necesario para configurar tu propio
-          servidor web Apache. Este tutorial está diseñado para principiantes y
-          usuarios intermedios, así que no te preocupes si no tienes experiencia
-          previa con servidores web.
+          Bienvenido a nuestra guía detallada sobre cómo instalar Internet
+          Information Services (IIS) en Windows Server. Si estás buscando
+          configurar un servidor web robusto, seguro y de alto rendimiento en un
+          entorno Windows, IIS ofrece una plataforma de administración web
+          integral y escalable adecuada para sitios web de todos los tamaños.
+          Desde servir páginas web estáticas hasta aplicaciones web dinámicas,
+          IIS proporciona las herramientas y características necesarias para
+          satisfacer las necesidades de tu proyecto o empresa.
+        </p>
+        <p>
+          Esta guía está diseñada para administradores de sistemas,
+          desarrolladores web, y profesionales de TI que buscan implementar IIS
+          en su infraestructura de Windows Server. Asumimos que tienes una
+          comprensión básica de los principios de redes y administración de
+          servidores Windows, pero no te preocupes si eres nuevo en esto; el
+          proceso de instalación y configuración de IIS es accesible para
+          usuarios de todos los niveles.
         </p>
       </section>
       <section>
-        <h2>Preparación</h2>
+        <h2>¿Por Qué Elegir IIS?</h2>
         <p>
-          Antes de comenzar, asegúrate de tener un sistema operativo Windows
-          actualizado para evitar cualquier incompatibilidad o problema de
-          seguridad. También es recomendable desactivar temporalmente tu
-          software antivirus durante la instalación para evitar que interfiera
-          con el proceso de instalación de Apache.
+          IIS no es solo un servidor web. Es una plataforma web extensible que
+          soporta aplicaciones .NET, PHP, y otras tecnologías populares de
+          desarrollo web. Además, ofrece características avanzadas de seguridad,
+          administración remota, compresión de contenido, caché, y mucho más.
+          Con IIS, puedes:
+        </p>
+        <p>
+          Alojar uno o varios sitios web y configurarlos según tus necesidades
+          específicas.
+        </p>
+        <p>
+          Aprovechar la integración profunda con otras tecnologías de Microsoft
+          para una administración y mantenimiento más eficientes.
+        </p>
+        <p>
+          Utilizar una variedad de módulos para extender las capacidades del
+          servidor según los requerimientos de tus aplicaciones web.
         </p>
       </section>
       <section>
-        <h2>Paso 1: Descarga Apache HTTP Server</h2>
+        <h2>Antes de Comenzar</h2>
         <p>
-          Antes de comenzar la instalación, asegúrate de tener un sistema
-          operativo compatible, como Linux, Windows, o MacOS, y acceso a una
-          cuenta con privilegios de administrador o root.
+          Antes de sumergirnos en la instalación de IIS, es crucial preparar tu
+          entorno y asegurarte de que todo esté listo para una instalación
+          exitosa. Aunque ya tienes los pasos específicos para la instalación,
+          aquí hay algunos puntos importantes a considerar:
         </p>
-        
+        <section>
+          <h3>Revisar Requisitos del Sistema:</h3>
+          <p>
+            Asegúrate de que tu servidor cumpla con los requisitos mínimos de
+            hardware y sistema operativo para IIS y cualquier software adicional
+            que planees usar.
+          </p>
+        </section>
+        <section>
+          <h3>Planificar la Estructura del Sitio:</h3>
+          <p>
+            Considera cómo organizarás tus sitios web, aplicaciones, y contenido
+            dentro del servidor. Una buena planificación facilitará la
+            administración y escalabilidad futuras.
+          </p>
+        </section>
+        <section>
+          <h3>Configuraciones de Red:</h3>
+          <p>
+            Verifica la configuración de red de tu servidor, incluyendo
+            direcciones IP, nombres de dominio, y puertos. Esto es esencial para
+            asegurar que tu servidor web sea accesible para los usuarios
+            finales.
+          </p>
+        </section>
+        <section>
+          <h3>Seguridad:</h3>
+          <p>
+            Familiarízate con las prácticas recomendadas de seguridad para IIS y
+            Windows Server. Esto incluye la configuración de certificados SSL
+            para sitios web seguros, la restricción de permisos de acceso, y la
+            implementación de firewalls y otras medidas de protección.
+          </p>
+        </section>
       </section>
       <section>
-        <h2>Pasos de instalación</h2>
+        <h2>Instalación de IIS en Windows Server</h2>
         <p>
-          1. Elige un software de servidor web, como Apache, Nginx, o IIS.<br />
-          2. Descarga e instala el software del servidor web siguiendo las
-          instrucciones específicas para tu sistema operativo.<br />
-          3. Configura el servidor web ajustando los archivos de configuración
-          según tus necesidades.
+          Para instalar Internet Information Services (IIS) en Windows Server,
+          sigue estos pasos detalladamente:
         </p>
-      </section>
-      <section>
-        <h2>Publicación de contenido</h2>
-        <p>
-          Para publicar tu sitio web o aplicación web, coloca los archivos en el
-          directorio designado del servidor web y asegúrate de que estén
-          accesibles a través de Internet.
-        </p>
-      </section>
-      <section>
-        <h2>Pruebas y verificación</h2>
-        <p>
-          Accede a tu servidor web desde un navegador utilizando la dirección IP
-          del servidor o un dominio apuntando a esa IP para verificar que el
-          servidor está funcionando correctamente.
-        </p>
-      </section>
-      <section>
-        <h2>Solución de problemas</h2>
-        <p>
-          Si encuentras problemas, revisa los logs del servidor web y consulta
-          la documentación oficial para soluciones específicas.
-        </p>
+        <ol>
+          <li>
+            Pulsa la tecla de Windows y selecciona el Administrador del
+            servidor.
+            <img
+              src="../imagenes/web/1-web.png"
+              alt="Instalacion servidor web IIS paso 1"
+            />
+          </li>
+          <li>
+            En el panel del Administrador del servidor haz clic en Administrar >
+            Agregar roles y características.
+            <img
+              src="../imagenes/web/2-web.png"
+              alt="Instalacion servidor web IIS paso 2"
+            />
+          </li>
+          <li>
+            Haz clic en Tipo de instalación (Installation Type).
+            <img
+              src="../imagenes/web/3-web.png"
+              alt="Instalacion servidor web IIS paso 3"
+            />
+          </li>
+          <li>
+            Selecciona la opción Instalación basada en funciones o
+            características (Role-based or feature-based installation) y haz
+            clic en Siguiente (Next).
+            <img
+              src="../imagenes/web/4-web.png"
+              alt="Instalacion servidor web IIS paso 4"
+            />
+          </li>
+          <li>
+            Selecciona el servidor en el que deseas instalar IIS y haz clic en
+            Siguiente (Next).
+            <img
+              src="../imagenes/web/5-web.png"
+              alt="Instalacion servidor web IIS paso 5"
+            />
+          </li>
+          <li>
+            Para el rol, selecciona Servidor web (IIS).
+            <img
+              src="../imagenes/web/6-web.png"
+              alt="Instalacion servidor web IIS paso 6"
+            />
+          </li>
+          <li>
+            Para agregar la Consola de administración de IIS, haz clic en
+            Agregar características (Add Features).
+            <img
+              src="../imagenes/web/7-web.png"
+              alt="Instalacion servidor web IIS paso 7"
+            />
+          </li>
+          <li>
+            Haz clic en Siguiente (Next). Se abrirá la ventana Seleccionar
+            características (Select features).
+            <img
+              src="../imagenes/web/8-web.png"
+              alt="Instalacion servidor web IIS paso 8"
+            />
+          </li>
+          <li>
+            Haz clic en Siguiente (Next). Se abrirá la ventana Rol de servidor
+            web (IIS) (Web Server Role (IIS)).
+            <img
+              src="../imagenes/web/9-web.png"
+              alt="Instalacion servidor web IIS paso 9"
+            />
+          </li>
+          <li>
+            Haz clic en Siguiente (Next). Se abrirá la ventana Servicios de rol (Role services).
+            <img
+              src="../imagenes/web/10-web.png"
+              alt="Instalacion servidor web IIS paso 10"
+            />
+          </li>
+          <li>
+            Selecciona los servicios de rol requeridos y haz clic en Siguiente (Next).
+            <img
+              src="../imagenes/web/11-web.png"
+              alt="Instalacion servidor web IIS paso 11"
+            />
+          </li>
+          <li>
+            Para instalar los roles, servicios de rol y características seleccionados, haz clic en Instalar (Install).
+            <img
+              src="../imagenes/web/12-web.png"
+              alt="Instalacion servidor web IIS paso 12"
+            />
+          </li>
+          <li>Para completar la instalación haz clic en Cerrar.</li>
+        </ol>
       </section>
     </main>
     <footer>
@@ -89,5 +216,9 @@
       </p>
       <p>Última actualización: febrero 26, 2024</p>
     </footer>
+
+    <button id="btnSubir" onclick="subirArriba()">↑ Subir</button>
+
+    <script src="../script.js"></script>
   </body>
 </html>

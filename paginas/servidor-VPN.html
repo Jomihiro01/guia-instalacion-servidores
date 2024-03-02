@@ -6,6 +6,7 @@
     <title>Servidor VPN</title>
     <link rel="icon" type="image/jpeg" href="../imagenes/logo.jpeg" />
     <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos-paginas.css" />
   </head>
   <body>
     <header>
@@ -16,54 +17,257 @@
           /></a>
         </div>
       </nav>
-      <h1>¿Cómo instalar un Servidor VPN?</h1>
     </header>
     <main>
       <section>
-        <h2>Introducción</h2>
+        <h1>Guía de Instalación de un Servidor VPN en Windows Server</h1>
         <p>
-          Un servidor VPN permite a los usuarios conectarse de manera segura a
-          una red privada a través de Internet. Es útil para garantizar la
-          seguridad y privacidad de las comunicaciones online.
+          En el mundo actual, marcado por la creciente necesidad de acceso
+          remoto seguro a las redes corporativas y la protección de datos en
+          tránsito, establecer un servidor VPN se ha convertido en una práctica
+          esencial para las empresas y los individuos por igual. Este tutorial
+          está diseñado para guiarte a través de la configuración de un servidor
+          VPN en Windows Server, proporcionando un túnel seguro para tu
+          comunicación en línea.
+        </p>
+        <p>
+          La implementación de un servidor VPN en Windows Server te permite
+          aprovechar la infraestructura y las capacidades de seguridad de
+          Windows, ofreciendo un método robusto para garantizar la privacidad y
+          la integridad de los datos. A través de este tutorial, te brindaremos
+          las herramientas y conocimientos necesarios para desplegar tu propio
+          servidor VPN, permitiéndote gestionar el acceso remoto y proteger las
+          conexiones de red.
         </p>
       </section>
       <section>
-        <h2>Requisitos previos</h2>
-        <p>
-          Antes de comenzar, asegúrate de contar con el hardware necesario y
-          acceso a un sistema operativo compatible, como Linux, Windows Server,
-          etc.
-        </p>
+        <h2>¿Por Qué Instalar un Servidor VPN?</h2>
+        <section>
+          <h3>Acceso Remoto Seguro:</h3>
+          <p>
+            Permite a los usuarios conectarse a la red de la empresa desde
+            cualquier lugar, garantizando la seguridad de la transmisión de
+            datos.
+          </p>
+        </section>
+        <section>
+          <h3>Protección de Datos:</h3>
+          <p>
+            Cifra la conexión de internet, protegiendo tu información contra
+            interceptaciones no autorizadas.
+          </p>
+        </section>
+        <section>
+          <h3>Flexibilidad:</h3>
+          <p>
+            Ofrece la posibilidad de configurar accesos específicos basados en
+            roles y necesidades del usuario.
+          </p>
+        </section>
+        <section>
+          <h3>Bajo Costo:</h3>
+          <p>
+            Utilizar Windows Server para implementar una VPN elimina la
+            necesidad de hardware adicional, reduciendo los costos operativos.
+          </p>
+        </section>
       </section>
       <section>
-        <h2>Pasos de instalación</h2>
+        <h2>Requisitos Previos</h2>
         <p>
-          1. Descargar el software VPN.<br />
-          2. Instalar el software siguiendo las instrucciones del proveedor.<br />
-          3. Configurar el servidor con los ajustes deseados.
+          Antes de proceder con la instalación de tu servidor VPN, asegúrate de
+          contar con:
         </p>
+        <p>Un servidor que ejecute Windows Server.</p>
+        <p>Derechos de administrador en el servidor.</p>
+        <p>Conexión a Internet activa.</p>
+        <p>Conocimientos básicos de red y administración de Windows Server.</p>
       </section>
       <section>
-        <h2>Configuración de clientes VPN</h2>
+        <h2>Instalación de un servidor VPN</h2>
         <p>
-          Para conectarte al servidor VPN desde un dispositivo cliente,
-          necesitarás instalar el software VPN y configurarlo con los datos
-          proporcionados por el servidor.
+          Para instalar un servidor VPN en Windows Server,
+          sigue estos pasos detalladamente:
         </p>
-      </section>
-      <section>
-        <h2>Pruebas y verificación</h2>
-        <p>
-          Después de configurar el servidor y los clientes, realiza pruebas para
-          asegurar que la conexión es segura y estable.
-        </p>
-      </section>
-      <section>
-        <h2>Solución de problemas</h2>
-        <p>
-          Si encuentras errores, verifica las configuraciones y consulta la
-          documentación de tu proveedor de VPN para soluciones específicas.
-        </p>
+        <ol>
+          <li>
+            Primeramente, deberemos acceder al administrador del servidor y en
+            la parte superior derecha en Administrar seleccionamos: Agregar
+            roles y características
+            <img
+              src="../imagenes/vpn/1-vpn.png"
+              alt="Instalacion servidor web IIS paso 1"
+            />
+          </li>
+          <li>
+            Se abrirá una ventana emergente en la cual deberemos hacer clic en:
+            siguiente.
+            <img
+              src="../imagenes/vpn/2-vpn.png"
+              alt="Instalacion servidor web IIS paso 2"
+            />
+          </li>
+          <li>
+            En tipo de instalación igual deberemos seleccionar en siguiente.
+            <img
+              src="../imagenes/vpn/3-vpn.png"
+              alt="Instalacion servidor web IIS paso 3"
+            />
+          </li>
+          <li>
+            En selección de servidor debemos seleccionar nuestro servidor y dar
+            clic en siguiente.
+            <img
+              src="../imagenes/vpn/4-vpn.png"
+              alt="Instalacion servidor web IIS paso 4"
+            />
+          </li>
+          <li>
+            En roles del servidor deberemos seleccionar: Acceso remoto y hacer
+            clic en siguiente.
+            <img
+              src="../imagenes/vpn/5-vpn.png"
+              alt="Instalacion servidor web IIS paso 5"
+            />
+          </li>
+          <li>
+            En características damos clicen siguiente.
+            <img
+              src="../imagenes/vpn/6-vpn.png"
+              alt="Instalacion servidor web IIS paso 6"
+            />
+          </li>
+          <li>
+            En acceso remoto damos clic en siguiente.
+            <img
+              src="../imagenes/vpn/7-vpn.png"
+              alt="Instalacion servidor web IIS paso 7"
+            />
+          </li>
+          <li>
+            En servicios de rol seleccionamos Enrutamiento, DirectAccess y VPN
+            (RAS) luego damos clic en siguiente.
+            <img
+              src="../imagenes/vpn/8-vpn.png"
+              alt="Instalacion servidor web IIS paso 8"
+            />
+          </li>
+          <li>
+            En confirmación damos clic a instalar.
+            <img
+              src="../imagenes/vpn/9-vpn.png"
+              alt="Instalacion servidor web IIS paso 9"
+            />
+          </li>
+          <li>
+            Esperamos a que se instale.
+            <img
+              src="../imagenes/vpn/10-vpn.png"
+              alt="Instalacion servidor web IIS paso 10"
+            />
+          </li>
+          <li>
+            Una vez la instalación finalice damos clic en cerrar.
+            <img
+              src="../imagenes/vpn/11-vpn.png"
+              alt="Instalacion servidor web IIS paso 11"
+            />
+          </li>
+          <li>
+            Reiniciamos el servidor para que se apliquen los cambios y una vez
+            encendido abrimos el administrador de acceso remoto, arriba a la
+            derecha hacemos clic en Herramientas, luego hacemos clic en
+            Enrutamiento y acceso remoto.
+            <img
+              src="../imagenes/vpn/12-vpn.png"
+              alt="Instalacion servidor web IIS paso 12"
+            />
+          </li>
+          <li>
+            En la nueva ventana seleccionamos nuestro servidor y hacemos clic
+            derecho sobre el mismo, luego damos clic en configurar y habilitar
+            Enrutamiento y Acceso remoto.
+            <img
+              src="../imagenes/vpn/13-vpn.png"
+              alt="Instalacion servidor web IIS paso 13"
+            />
+          </li>
+          <li>
+            En la nueva ventana del asistente de instalación damos click en
+            siguiente.
+            <img
+              src="../imagenes/vpn/14-vpn.png"
+              alt="Instalacion servidor web IIS paso 14"
+            />
+          </li>
+          <li>
+            En esta ventana seleccionaremos Configuración personalizada para un
+            mayor control y hacemos clic en siguiente.
+            <img
+              src="../imagenes/vpn/15-vpn.png"
+              alt="Instalacion servidor web IIS paso 15"
+            />
+          </li>
+          <li>
+            Seleccionamos Acceso VPN y damos clic en siguiente.
+            <img
+              src="../imagenes/vpn/16-vpn.png"
+              alt="Instalacion servidor web IIS paso 16"
+            />
+          </li>
+          <li>
+            Damos clic en finalizar.
+            <img
+              src="../imagenes/vpn/17-vpn.png"
+              alt="Instalacion servidor web IIS paso 17"
+            />
+          </li>
+          <li>
+            Se abrirá una venta emergente en la cual daremos clic en iniciar
+            servicio.
+            <img
+              src="../imagenes/vpn/18-vpn.png"
+              alt="Instalacion servidor web IIS paso 18"
+            />
+          </li>
+          <li>
+            Una vez el servicio este iniciado seleccionamos el servidor, damos
+            clic derecho sobre el mismo y posteriormente damos clic en
+            propiedades.
+            <img
+              src="../imagenes/vpn/19-vpn.png"
+              alt="Instalacion servidor web IIS paso 19"
+            />
+          </li>
+          <li>
+            En la nueva ventana seleccionamos IPV4, seleccionamos la opción de
+            conjunto de direcciones estáticas y luego hacemos clic en agregar.
+            <img
+              src="../imagenes/vpn/20-vpn.png"
+              alt="Instalacion servidor web IIS paso 20"
+            />
+          </li>
+          <li>
+            En la nueva ventana definimos el intervalo de direcciones IP,
+            pondremos la IP inicial y la IP final y luego le damos clic en
+            aceptar.
+            <img
+              src="../imagenes/vpn/21-vpn.png"
+              alt="Instalacion servidor web IIS paso 21"
+            />
+          </li>
+          <li>
+            Se cerrará automáticamente la ventana y damos clic en aplicar luego
+            en aceptar.
+            <img
+              src="../imagenes/vpn/22-vpn.png"
+              alt="Instalacion servidor web IIS paso 22"
+            />
+          </li>
+          <li>
+            Con estos pasos ya tendríamos la VPN creada y lista para usarse.
+          </li>
+        </ol>
       </section>
     </main>
     <footer>
@@ -73,5 +277,9 @@
       </p>
       <p>Última actualización: febrero 26, 2024</p>
     </footer>
+
+    <button id="btnSubir" onclick="subirArriba()">↑ Subir</button>
+
+    <script src="../script.js"></script>
   </body>
 </html>
